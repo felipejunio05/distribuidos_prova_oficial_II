@@ -1,0 +1,36 @@
+{
+  "saudacao": {
+    "request": ["Oi", "Ola", "Oi tudo bem?", "Tem alguem ai?", "Pode me ajudar"],
+    "response": ["Oi tudo bem e voce ?", "Ola, como posso te ajudar ?", "Oi, como podemos te ajudar?"]
+  },
+
+  "despedida": {
+    "request": ["Tchau", "Ate mais", "abracos"],
+    "response": ["Até mais, obrigado pela visita!", "Tenha um otimo dia!", "Atè, um abraço."]
+  },
+
+  "agradecimento": {
+    "request": ["Obrigado", "Obrigado pela ajuda", "Muito obrgado","Voce me ajudou"],
+    "response": ["De nada!", "Fico feliz em ajudar!", "Disponha"]
+  },
+
+  "horario": {
+    "request": ["Que horas abre a loja?", "Voce abrem que horas?", "Qual o horario de funcionamento" ],
+    "response": ["Nosso horario e das 08h as 23h", "Estamos aberto das  08h as 23h"]
+  },
+
+  "produto": {
+    "request": ["O que voces vendem ?", "Qual o seu produto?", "O que esta a venda?" ],
+    "response": ["Nos trabalhamos com a producaoo de pizza artesanal.", "Pizza artesanais!"]
+  },
+
+  "pagamentos": {
+    "request": ["Voces aceitam cartao de credito?", "Aceita Mastercard?", "Posso pagar com cartao?" ],
+    "response": ["Nos aceitamos VISA, Mastercard e AMEX", "Sim aceitamos cartoes de credito"]
+  },
+
+  "cardapio": {
+    "request": ["Quais os sabores de pizza?", "Pode me mandar o cardapio?", "Quais os sabores"],
+    "response": ["Calabresa, Queijo, Mexicana","Acesse o link: https://www.pizzahut.com.br/"]
+  }
+}
