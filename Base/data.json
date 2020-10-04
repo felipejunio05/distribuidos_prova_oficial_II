@@ -1,36 +1,51 @@
 {
-  "saudacao": {
-    "request": ["Oi", "Ola", "Oi tudo bem?", "Tem alguem ai?", "Pode me ajudar"],
-    "response": ["Oi tudo bem e voce ?", "Ola, como posso te ajudar ?", "Oi, como podemos te ajudar?"]
-  },
+	"saudacao": {
+		"request": ["Oi", "Ola", "alô", "bom dia","boa tarde", "boa noite", "alguem?", "Preciso de ajuda", "Oi tudo bem?", "Tem alguem ai?", "Pode me ajudar?", "preciso de informação","estou precisando de informação"],
+		"response": ["Oi, como posso te ajudar?", "sim, posso te ajudar em algo?"]
+	},
 
-  "despedida": {
-    "request": ["Tchau", "Ate mais", "abracos"],
-    "response": ["Até mais, obrigado pela visita!", "Tenha um otimo dia!", "Atè, um abraço."]
-  },
+	"despedida": {
+		"request": ["Tchau", "Ate mais", "abraços"],
+		"response": ["Até mais, obrigado!", "Tenha um otimo dia!", "Atè, um abraço."]
+	},
 
-  "agradecimento": {
-    "request": ["Obrigado", "Obrigado pela ajuda", "Muito obrgado","Voce me ajudou"],
-    "response": ["De nada!", "Fico feliz em ajudar!", "Disponha"]
-  },
+	"agradecimento": {
+		"request": ["Obrigado!", "Obrigado pela ajuda!", "Muito obrigado!", "Voce me ajudou!"],
+		"response": ["De nada!", "Fico feliz em ajudar!", "Disponha"]
+	},
 
-  "horario": {
-    "request": ["Que horas abre a loja?", "Voce abrem que horas?", "Qual o horario de funcionamento" ],
-    "response": ["Nosso horario e das 08h as 23h", "Estamos aberto das  08h as 23h"]
-  },
+	"nome": {
+		"request": ["qual é o seu nome?", "me diga o seu nome", "você tem um nome?", "teu nome é?", "por favor, qual é o seu nome?", "poderia dizer o seu nome?"],
+		"response": ["Meu nome é Artd", "Sou ArtD", "Artd é o meu nome", "Artd é o nome que o meu criador me deu :)"]
+	},
 
-  "produto": {
-    "request": ["O que voces vendem ?", "Qual o seu produto?", "O que esta a venda?" ],
-    "response": ["Nos trabalhamos com a producaoo de pizza artesanal.", "Pizza artesanais!"]
-  },
+	"idade": {
+		"request": ["qual é a sua idade?", "quantos anos você tem?"],
+		"response": ["sou um ser virtual e por isso não faço aniversário ':(", "Infelizmente eu não faço aniversario"]
+	},
 
-  "pagamentos": {
-    "request": ["Voces aceitam cartao de credito?", "Aceita Mastercard?", "Posso pagar com cartao?" ],
-    "response": ["Nos aceitamos VISA, Mastercard e AMEX", "Sim aceitamos cartoes de credito"]
-  },
+	"horario": {
+		"request": ["que horas vocês abrem?", "Voce abrem que horas?", "qual é o horario de atendimento?", "qual horario de funcionamento?"],
+		"response": ["Nosso horário de funcionamento é de segunda a sexta das 09:00 às 18:00", "Estamos abertos de segunda a sexta das 09:00 às 18:00", "Funcionamos de segunda a sexta das 09:00 às 18:00"]
+	},
 
-  "cardapio": {
-    "request": ["Quais os sabores de pizza?", "Pode me mandar o cardapio?", "Quais os sabores"],
-    "response": ["Calabresa, Queijo, Mexicana","Acesse o link: https://www.pizzahut.com.br/"]
-  }
+	"serviços": {
+		"request": ["quais serviços vocês oferecem?", "o que vocês fazem?"],
+		"response": ["Oferecemos trainamentos e certificações em TI", "Oferecemos trainamentos e certificações em TI, nossa principal missão é agregar valor ao mercado profissional de Minas Gerais através da qualificação nas principais certificações nacionais e internacionais no setor de TI."]
+	},
+
+	"cursos": {
+		"request": ["quais cursos vocês oferecem", "lista de cursos?", "catalago de cursos"],
+		"response": ["Oferecemos treinamentos de CCNA, ITIL, Power BI, PMBOK", "Nos ofertamos os Cursos de CCNA, ITIL, Power BI, PMBOK"]
+	},
+
+	"endereço": {
+		"request": ["qual é o endereço de vocês?", "poderia informar a localização?", "onde vocês ficam?", "onde é o escritorio?"],
+		"response": ["Ficamos na Av. Juscelino Kubitschek, 229 - Centro, Betim - MG, 32600-225", "Estamos Localizados na Av. Juscelino Kubitschek, 229 - Centro, Betim - MG, 32600-225", "Nosso escritório fica Av. Juscelino Kubitschek, 229 - Centro, Betim - MG, 32600-225", "Estamos na Av. Juscelino Kubitschek, 229 - Centro, Betim - MG, 32600-225"]
+	},
+
+	"orçamento": {
+		"request": ["eu gostaria de fazer o treinameto", "estou querendo fazer um treinamento", "como faço para fazer o treinamento", "eu gostaria de fazer os cursos", "vocês tem turma este semestre?", "vocês tem turma este ano?", "vocês tem turma para este mês?"],
+		"response": ["Para realizar o treinamento, entre em contato com nosso CEO 31 9XXXX-XXXX"]
+	}
 }

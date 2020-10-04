@@ -5,13 +5,12 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import BatchNormalization
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.callbacks import ReduceLROnPlateau
-from tensorflow.keras.callbacks import ModelCheckpoint
 
 
-__all__ = ['Agent']
+__all__ = ['Model']
 
 
-class Agent:
+class Model:
 
     def __init__(self):
         self.__model: Sequential = None
@@ -32,14 +31,13 @@ class Agent:
     def load_model(self, path: str) -> None:
         self.__model = load_model(path)
 
-    def fit(self, x: array, y: array, epochs: int, batch_size: int, filepath: str) -> None:
+    def fit(self, x: array, y: array, epochs: int, batch_size: int) -> None:
 
         if self.__model is not None:
             EarStop = EarlyStopping(monitor='loss', min_delta=1e-10, patience=20, verbose=1)
             RedPlat = ReduceLROnPlateau(monitor='loss', factor=0.2, patience=10, verbose=1)
-            ChkPoint = ModelCheckpoint(filepath=filepath, monitor='loss', save_best_only=True, verbose=1)
 
-            self.__model.fit(x, y, epochs=epochs, batch_size=batch_size, callbacks=[EarStop, RedPlat, ChkPoint])
+            self.__model.fit(x, y, epochs=epochs, batch_size=batch_size, callbacks=[EarStop, RedPlat])
         else:
             raise Exception("O modelo não foi criado ou carregado.")
 

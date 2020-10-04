@@ -10,13 +10,12 @@ class Dataset:
 
     def __init__(self, data: dict, ignore: list) -> None:
         self.__data: dict = data
+        self.__ignore = ignore
 
         self.__doc: list = []
         self.__words:  list = []
         self.__target: list = []
         self.__dataset: tuple = ()
-
-        self.__separate(ignore)
 
     @property
     def words(self) -> list:
@@ -27,6 +26,7 @@ class Dataset:
         return self.__target
 
     def load_data(self) -> tuple:
+        self.__separate(self.__ignore)
         return self.__dataset
 
     def __separate(self, ignore: list) -> None:
