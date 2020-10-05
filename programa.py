@@ -49,7 +49,7 @@ if __name__ == '__main__':
     data, dataset = data_load()
     chatBot = model_load()
 
-    telegram = Updater(token="890954333:AAGdEeFfF54KVdLP_w20GH0wxMIga8KcHcc")
+    telegram = Updater(token="TOKEN_AQUI")
     telegram.dispatcher.add_handler(MessageHandler(Filters.text & (~Filters.command), talk))
     telegram.start_polling()
     telegram.idle()
